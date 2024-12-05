@@ -51,6 +51,8 @@ jobs:
           pnpm clean
           pnpm changeset:prepublish
           pnpx pkg-pr-new publish --pnpm --compact './packages/abitype'
+        env:
+          PKG_PR_NEW: true 
 
   jsr:
     name: JSR
