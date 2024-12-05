@@ -72,7 +72,7 @@ type ValidConstructorSignatures =
   | `constructor(${string})`
   | `constructor(${string}) payable`
 
-type IsFallbackSignature<signature extends string> = signature extends
+export type IsFallbackSignature<signature extends string> = signature extends
   | FallbackSignature<''>
   | FallbackSignature<' payable'>
   ? true
